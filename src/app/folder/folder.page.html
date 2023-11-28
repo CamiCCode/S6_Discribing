@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="mycolor">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ folder }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+        <ion-card [routerLink]="['/lista-tareas']">
+          <div class="ion-img-task">
+          </div>
+          <!-- <img alt="Silhouette of mountains" src="#" /> -->
+          <ion-card-header>
+            <ion-card-title>Ver tareas de día</ion-card-title>
+            <ion-card-subtitle>Task</ion-card-subtitle>            
+          </ion-card-header>
+        </ion-card>
+
+      <ion-card [routerLink]="['/diario']">
+        <div class="ion-img-diary">
+        </div>
+        <!-- <img alt="Silhouette of mountains" src="#" /> -->
+        <ion-card-header>
+          <ion-card-title>Visita tu diario</ion-card-title>
+          <ion-card-subtitle>Diario</ion-card-subtitle>          
+        </ion-card-header>
+      </ion-card>
+
+
+
+</ion-content>
